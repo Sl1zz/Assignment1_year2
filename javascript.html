@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced web Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column min-vh-100 m-0 p-0">
+        <!-- NavBar and menu -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/global.png" alt="logo" width="30" height="24"
+                        class="d-inline-block align-text-top text-dark">
+                    <strong> ITWD6.408</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark" href="index.html"><strong>
+                                    HOME</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="form.html"><strong>FORMS</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="xmljason.html"><strong>XML/RSS</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="javascript.html"><strong>JAVSCRIPT</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="research.html"><strong>RESEARCH</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hide search on small screens -->
+            <form class="d-none d-lg-flex d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            <!-- Search icon on small screens -->
+            <button class="d-lg-none btn btn-outline-secondary ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#searchDropdown" aria-expanded="false" aria-label="Toggle search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </button>
+            <div class="collapse d-lg-none" id="searchDropdown">
+                <form class="p-3" role="search">
+                    <input class="form-control mb-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success w-100" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- xml / json content-->
+        <div id="javascript" class="container-fluid flex-grow-1">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="row">
+                        <div class="col-6 col-lg-12 p-2 pe-lg-5">
+                            <button class="btn btn-custom w-100" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#jscontent1" aria-expanded="true" aria-controls="jscontent1">
+                                Demo1
+                            </button>
+                        </div>
+                        <div class="col-6 col-lg-12 p-2 pe-lg-5">
+                            <button class="btn btn-custom w-100" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#jscontent2" aria-expanded="false" aria-controls="jscontent2">
+                                Demo2
+                            </button>
+                        </div>
+                        <div class="col-6 col-lg-12 p-2 pe-lg-5">
+                            <button class="btn btn-custom w-100" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#jscontent3" aria-expanded="false" aria-controls="jscontent3">
+                                Demo3
+                            </button>
+                        </div>
+                        <div class="col-6 col-lg-12 p-2 pe-lg-5">
+                            <button class="btn btn-custom w-100" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#jscontent4" aria-expanded="false" aria-controls="jscontent4">
+                                Demo4
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9 mt-2 mb-2" id="jsbox">
+                    <div class="collapse show" id="jscontent1" data-bs-parent="#jsbox">
+                        <div class="content-area min-vh-100 p-3 bg-light">
+                            <div class="row">
+                                <h1 class=" d-flex justify-content-center align-items-center flex-column">
+                                    <strong>Slideshow Demos</strong>
+                                </h1>
+                                <!-- Automatic Slideshow -->
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0 border border-dark rounded ssbg-custom1">
+                                    <h2>Automatic Slideshow</h2>
+                                    <p>Change image every 2 seconds:</p>
+                                    <div class="slideshow-container">
+                                        <div class="mySlides fade">
+                                            <div class="text">Shawshank Redemption</div>
+                                            <div class="numbertext">1 / 5</div>
+                                            <img src="images/movie0.jpg" alt="Shawshank_Redemption poster"
+                                                style="width:50%">
+                                            <div class="description bg-light rounded">A Maine banker convicted of the
+                                                murder of his wife
+                                                and her lover in 1947 gradually forms a friendship over a quarter
+                                                century with a hardened convict, while maintaining
+                                                his innocence and trying to remain hopeful through simple compassion.
+                                            </div>
+                                        </div>
+                                        <div class="mySlides fade">
+                                            <div class="text">The Godfather</div>
+                                            <div class="numbertext">2 / 5</div>
+                                            <img src="images/movie1.jpg" alt="Movie poster 1" style="width:50%">
+                                            <div class="description bg-light rounded">Don Vito Corleone, head of a mafia
+                                                family, decides
+                                                to hand over his empire to his youngest son, Michael. However,
+                                                his decision unintentionally puts the lives of his loved ones in grave
+                                                danger.</div>
+                                        </div>
+                                        <div class="mySlides fade">
+                                            <div class="text">The Dark Knight</div>
+                                            <div class="numbertext">3 / 5</div>
+                                            <img src="images/movie2.jpg" alt="Movie poster 2" style="width:50%">
+                                            <div class="description bg-light rounded">When the menace known as the Joker
+                                                wreaks havoc and
+                                                chaos on the people of Gotham, Batman, James Gordon and
+                                                Harvey Dent must work together to put an end to the madness.</div>
+                                        </div>
+                                        <div class="mySlides fade">
+                                            <div class="text">The Sadness</div>
+                                            <div class="numbertext">4 / 5</div>
+                                            <img src="images/The-sadness.jpg" alt="Movie poster 3" style="width:50%">
+                                            <div class="description bg-light rounded">A young couple trying to reunite
+                                                amid a city
+                                                ravaged by a
+                                                plague that turns its victims into deranged, bloodthirsty sadists</div>
+                                        </div>
+                                        <div class="mySlides fade">
+                                            <div class="text">Schindler's List</div>
+                                            <div class="numbertext">5 / 5</div>
+                                            <img src="images/movie4.jpg" alt="Movie poster 4" style="width:50%">
+                                            <div class="description bg-light rounded">In German-occupied Poland during
+                                                World War II,
+                                                industrialist Oskar Schindler gradually becomes concerned for his
+                                                Jewish workforce after witnessing their persecution by the Nazis.</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div style="text-align:center">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Manual Slideshow -->
+                                <div class="col-12 col-lg-6 mb-3 mb-lg-0 border border-dark rounded ssbg-custom2">
+                                    <h2>Manual Slideshow</h2>
+                                    <p>Use the buttons to navigate:</p>
+                                    <div class="manual-slideshow-container">
+                                        <div class="mySlides-manual">
+                                            <div class="text">Shawshank Redemption</div>
+                                            <div class="numbertext">1 / 5</div>
+                                            <img src="images/movie0.jpg" alt="Shawshank_Redemption poster"
+                                                style="width:50%">
+                                            <div class="description bg-light rounded">A Maine banker convicted of the
+                                                murder of his wife
+                                                and her lover in 1947 gradually forms a friendship over a quarter
+                                                century with a hardened convict, while maintaining
+                                                his innocence and trying to remain hopeful through simple compassion.
+                                            </div>
+                                        </div>
+                                        <div class="mySlides-manual">
+                                            <div class="text">The Godfather</div>
+                                            <div class="numbertext">2 / 5</div>
+                                            <img src="images/movie1.jpg" alt="Movie poster 1" style="width:50%">
+                                            <div class="description bg-light rounded">Don Vito Corleone, head of a mafia
+                                                family, decides
+                                                to hand over his empire to his youngest son, Michael. However,
+                                                his decision unintentionally puts the lives of his loved ones in grave
+                                                danger.</div>
+                                        </div>
+                                        <div class="mySlides-manual">
+                                            <div class="text">The Dark Knight</div>
+                                            <div class="numbertext">3 / 5</div>
+                                            <img src="images/movie2.jpg" alt="Movie poster 2" style="width:50%">
+                                            <div class="description bg-light rounded">When the menace known as the Joker
+                                                wreaks havoc and
+                                                chaos on the people of Gotham, Batman, James Gordon and
+                                                Harvey Dent must work together to put an end to the madness.</div>
+                                        </div>
+                                        <div class="mySlides-manual">
+                                            <div class="text">The Sadness</div>
+                                            <div class="numbertext">4 / 5</div>
+                                            <img src="images/The-sadness.jpg" alt="Movie poster 3" style="width:50%">
+                                            <div class="description bg-light rounded">A young couple trying to reunite
+                                                amid a city
+                                                ravaged by a
+                                                plague that turns its victims into deranged, bloodthirsty sadists</div>
+                                        </div>
+                                        <div class="mySlides-manual">
+                                            <div class="text">Schindler's List</div>
+                                            <div class="numbertext">5 / 5</div>
+                                            <img src="images/movie4.jpg" alt="Movie poster 4" style="width:50%">
+                                            <div class="description bg-light rounded">In German-occupied Poland during
+                                                World War II,
+                                                industrialist Oskar Schindler gradually becomes concerned for his
+                                                Jewish workforce after witnessing their persecution by the Nazis.</div>
+                                        </div>
+                                    </div>
+                                    <!-- Navigation Buttons -->
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <button class="btn btn-primary" onclick="plusSlides(-1)">Previous</button>
+                                        <button class="btn btn-primary" onclick="plusSlides(1)">Next</button>
+                                    </div>
+                                    <br>
+                                    <div style="text-align:center">
+                                        <span class="dot-manual"></span>
+                                        <span class="dot-manual"></span>
+                                        <span class="dot-manual"></span>
+                                        <span class="dot-manual"></span>
+                                        <span class="dot-manual"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Dynamic changer -->
+                    <div class="collapse bg-light border border-2 border-success rounded" id="jscontent2"
+                        data-bs-parent="#jsbox">
+                        <h1 class="ps-3">Welcome to the Dynamic Style Changer</h1>
+                        <p class="ps-3">Use the dropdown menus below to change the background color and text size of
+                            this page.</p>
+                        <div class="controls py-2 ps-3">
+                            <!-- Dropdown for Background Color -->
+                            <label for="backgroundColor">Background Color: </label>
+                            <select id="backgroundColor" onchange="changeBackgroundColor()">
+                                <option value="white">White</option>
+                                <option value="lightgray">Light Gray</option>
+                                <option value="lightblue">Light Blue</option>
+                                <option value="lightgreen">Light Green</option>
+                                <option value="lightpink">Light Red</option>
+                                <option value="matrix">Matrix</option>
+                            </select>
+
+                            <!-- Dropdown for Text Size -->
+                            <label for="textSize">Text Size: </label>
+                            <select id="textSize" onchange="changeTextSize()">
+                                <option value="16px">Default</option>
+                                <option value="18px">Medium</option>
+                                <option value="20px">Large</option>
+                                <option value="24px">Extra Large</option>
+                                <option value="60px">Insane</option>
+                            </select>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center align-items-center flex-column">
+                            <div class="ratio ratio-16x9 w-100" style="max-width: 500px;">
+                                <video class="embed-responsive-item" autoplay loop muted
+                                    src="https://media1.giphy.com/media/2rqEdFfkMzXmo/giphy.mp4?cid=790b76118e85130b6027e42ff5aca28cf62871c4e09f8306&rid=giphy.mp4&ct=g">
+                                    A man moving his hands away from his forehead sideways, in a mind-explosion gesture.
+                                    An overlaid animation enforces the explosion character.
+                                </video>
+                            </div>
+                            <p class="mt-3 text-center pt-3 pb-5 px-3">Wow! OMG! It's absolutely mind-blowing how we can
+                                change the page color and text size with just a click. This dynamic style changer is so
+                                cool, it's like having superpowers over the webpage. The ability to customize your
+                                viewing experience on the fly is simply amazing!</p>
+                        </div>
+                    </div>
+                    <div class="collapse border border-2 border-success rounded" id="jscontent3"
+                        data-bs-parent="#jsbox">
+                        <h1 class=" d-flex justify-content-center align-items-center flex-column mt-3"> Authentication
+                            Demo </h1>
+                        <div class="container mt-3 bg-light">
+                            <div class="row">
+                                <!-- Sign-Up Section -->
+                                <div class="col-12 col-lg-6 py-3 mb-4">
+                                    <H2 class="d-flex justify-content-center align-items-center flex-column">Demo Sign
+                                        up</H2>
+                                    <div class="form-container">
+                                        <h3 class="text-center">Sign Up</h3>
+                                        <form id="signupForm">
+                                            <div class="mb-3">
+                                                <label for="signupFirstName" class="form-label">First Name</label>
+                                                <input type="text" class="form-control" id="signupFirstName" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signupLastName" class="form-label">Last Name</label>
+                                                <input type="text" class="form-control" id="signupLastName" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signupUsername" class="form-label">Username</label>
+                                                <input type="text" class="form-control" id="signupUsername" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signupPassword" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="signupPassword"
+                                                    required>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                                            <div id="signupMessage" class="mt-3"></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!-- Sign-In Section -->
+                                <div class="col-12 col-lg-6 py-3 mb-4">
+                                    <H2 class="d-flex justify-content-center align-items-center flex-column">Demo Sign
+                                        in</H2>
+                                    <div class="form-container">
+                                        <h3 class="text-center">Sign In</h3>
+                                        <form id="signinForm">
+                                            <div class="mb-3">
+                                                <label for="signinUsername" class="form-label">Username</label>
+                                                <input type="text" class="form-control" id="signinUsername" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signinPassword" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="signinPassword"
+                                                    required>
+                                            </div>
+                                            <button type="submit" class="btn btn-success w-100">Sign In</button>
+                                            <div id="signinMessage" class="mt-3"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="jscontent4" data-bs-parent="#jsbox">
+                        <!-- Content for Demo4 -->
+                        <div class="container mt-2 bg-light pb-3 border border-2 border-success rounded">
+                            <h1 class="d-flex justify-content-center align-items-center flex-column">
+                                <strong>Place your votes</strong>
+                            </h1>
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card" data-card-id="9876">
+                                        <div class="card-img-container">
+                                            <div class="description bg-white p-2 text-black text-start fw-bold">
+                                                <span>Xbox Series S 1TB</span><br>
+                                                <span>$598.99</span>
+                                            </div>
+                                            <img src="images/techimages/GAMMST1602__4.webp" class="card-img-top" alt="Image 1">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-start">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_up</span>
+                                                </div>
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-end">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_down</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" data-card-id="9875">
+                                        <div class="card-img-container">
+                                            <div class="description bg-white p-2 text-black text-start fw-bold">
+                                                <span>Nintendo Switch Lite - Blue</span><br>
+                                                <span>$389.00</span>
+                                            </div>
+                                            <img src="images/techimages/GAMNTD1011__1.webp" class="card-img-top" alt="Image 2">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-start">
+                                                    <span class="card-vote-button material-icons me-1">thumb_up</span>
+                                                    <span class="card-vote-count">0</span>
+                                                </div>
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-end">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_down</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" data-card-id="9874">
+                                        <div class="card-img-container">
+                                            <div class="description bg-white p-2 text-black text-start fw-bold">
+                                                <span>Unico MVS Mini Arcade Game Console Controller</span><br>
+                                                <span>$39.00</span>
+                                            </div>
+                                            <img src="images/techimages/GAMMVS0003__8.jpg" class="card-img-top" alt="Image 3">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-start">
+                                                    <span class="card-vote-button material-icons me-1">thumb_up</span>
+                                                    <span class="card-vote-count">0</span>
+                                                </div>
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-end">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_down</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" data-card-id="9873">
+                                        <div class="card-img-container">
+                                            <div class="description bg-white p-2 text-black text-start fw-bold">
+                                                <span>Nintendo Switch OLED Console</span><br>
+                                                <span>$628.99</span>
+                                            </div>
+                                            <img src="images/techimages/GAMNTD1013__6.jpg" class="card-img-top" alt="Image 4">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-start">
+                                                    <span class="card-vote-button material-icons me-1">thumb_up</span>
+                                                    <span class="card-vote-count">0</span>
+                                                </div>
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-end">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_down</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" data-card-id="9872">
+                                        <div class="card-img-container">
+                                            <div class="description bg-white p-2 text-black text-start fw-bold">
+                                                <span>Sony PS5 PlayStation 5</span><br>
+                                                <span>$898.99</span>
+                                            </div>
+                                            <img src="images/techimages/GAMSNY5601__5.jpg" class="card-img-top" alt="Image 5">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-start">
+                                                    <span class="card-vote-button material-icons me-1">thumb_up</span>
+                                                    <span class="card-vote-count">0</span>
+                                                </div>
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-end">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_down</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card" data-card-id="9871">
+                                        <div class="card-img-container">
+                                            <div class="description bg-white p-2 text-black text-start fw-bold">
+                                                <span>Sony Playstation Portal Remote Player</span><br>
+                                                <span>$378.99</span>
+                                            </div>
+                                            <img src="images/techimages/GAMSNY9001__1.jpg" class="card-img-top" alt="Image 6">
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-start">
+                                                    <span class="card-vote-button material-icons me-1">thumb_up</span>
+                                                    <span class="card-vote-count">0</span>
+                                                </div>
+                                                <div class="card-vote col-6 d-flex align-items-center justify-content-end">
+                                                    <span class="card-vote-count me-1">0</span>
+                                                    <span class="card-vote-button material-icons">thumb_down</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div id="footer" class="container-fluid p-3">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/linkedin.png" alt="LinkedIn"
+                            class="social-icon" /></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/youtube.png" alt="YouTube"
+                            class="social-icon" /></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/twitter.png" alt="Twitter"
+                            class="social-icon" /></a>
+                    <a href="https://www.facebook.com/slizzed/"><img src="images/facebook.png" alt="Facebook"
+                            class="social-icon" /></a>
+                    <a href="https://www.instagram.com/o0slizzed0o/?hl=en"><img src="images/instagram.png"
+                            alt="Instagram" class="social-icon" /></a>
+                </div>
+                <div class="col-8 col-md-4 text-end text-md-center">
+                    <p class="mb-0">&copy; 2024 Steven Rogers</p>
+                </div>
+                <div class="col-4 col-md-4 text-end">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="javascript/javascript.js"></script>
+    <script src="javascript/signupform.js"></script>
+    <script src="javascript/colourtext_change.js"></script>
+    <script src="javascript/vote.js"></script>
+</body>
+
+</html>

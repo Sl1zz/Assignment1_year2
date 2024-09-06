@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced web Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/mystyles.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column min-vh-100 m-0 p-0">
+        <!-- NavBar and menu -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/global.png" alt="logo" width="30" height="24"
+                        class="d-inline-block align-text-top text-dark">
+                    EIT Assignment ITWD6.408
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark" href="index.html"><strong>
+                                    HOME</strong></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="form.html"><strong>FORMS</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="xmljason.html"><strong>XML/RSS</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="javascript.html"><strong>JAVSCRIPT</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link original-bg hover-bg-secondary text-dark"
+                                href="research.html"><strong>RESEARCH</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Hide search on small screens -->
+                <form class="d-none d-lg-flex d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <!-- Search icon on small screens -->
+                <button class="d-lg-none btn btn-outline-secondary ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#searchDropdown" aria-expanded="false" aria-label="Toggle search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </button>
+                <div class="collapse d-lg-none" id="searchDropdown">
+                    <form class="p-3" role="search">
+                        <input class="form-control mb-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success w-100" type="submit">Search</button>
+                    </form>
+                </div>
+        </nav>
+
+        <!-- Research section -->
+        <div id="research" class="container-fluid pt-3 flex-grow-1">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <div class="research-flip-box">
+                        <div class="research-flip-box-inner">
+                            <div
+                                class="research-flip-box-front rsboxf research-box d-flex flex-column border border-2 border-warning">
+                                <h6 class="text-center w-100 pb-3">Copyright, Creative Common (CC) Licenses, Fair Use
+                                </h6>
+                                <img src="images/research/copyright.jpg" alt="copyright" class="img-fluid">
+                            </div>
+                            <div
+                                class="research-flip-box-back research-box my-3 p-3 align-items-start border border-2 border-warning smaller-text">
+                                <a><strong><small>Copyright, Creative Commons (CC) Licenses, Fair
+                                            Use</small></strong></a>
+                                <p class="mb-0"><small>Copyright protects original works of authorship, providing
+                                        creators a standardized way to grant the public permission to use their creative
+                                        work under copyright law.</small></p>
+                                <a><strong><small>Types of Creative Commons (CC) Licenses</small></strong></a>
+                                <div class="row g-0">
+                                    <div class="col-md-12 d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><small><strong>CC BY:</strong> Attribution only.</small></p>
+                                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png"
+                                            alt="CC BY License" class="img-fluid ms-2">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><small><strong>CC BY-SA:</strong> Attribution,
+                                                share-alike.</small></p>
+                                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png"
+                                            alt="CC BY-SA License" class="img-fluid ms-2">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><small><strong>CC BY-ND:</strong> Attribution, no
+                                                derivatives.</small></p>
+                                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nd.png"
+                                            alt="CC BY-ND License" class="img-fluid ms-2">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-between align-items-center">
+                                        <p class="mb-0"><small><strong>CC BY-NC:</strong> Attribution,
+                                                non-commercial.</small></p>
+                                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png"
+                                            alt="CC BY-NC License" class="img-fluid ms-2">
+                                    </div>
+                                </div>
+                                <a><strong><small>Fair Use Principles</small></strong></a>
+                                <ol class="text-start smaller-text mb-0">
+                                    <li><small>Purpose and character of use (e.g., commercial or educational).</small>
+                                    </li>
+                                    <li><small>Nature of the copyrighted work.</small></li>
+                                    <li><small>Amount and substantiality of the portion used.</small></li>
+                                    <li><small>Effect on the market for the original work.</small></li>
+                                </ol>
+                                <a href="https://creativecommons.org/share-your-work/cclicenses/" class="link-bottom"
+                                    alt="cclicenses">REF: Creative Commons Licenses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <div class="research-flip-box">
+                        <div class="research-flip-box-inner">
+                            <div
+                                class="research-flip-box-front research-box d-flex flex-column p-3 justify-content-center border border-2 border-warning">
+                                <h6 class="text-center w-100 pb-3">Privacy & Web Privacy Policy</h6>
+                                <img src="images/research/privacy.jpg" alt="privacy" class="img-fluid border">
+                            </div>
+                            <div
+                                class="research-flip-box-back research-box my-3 p-3 align-items-start border border-2 border-warning smaller-text">
+
+                                <p><small><strong>What is a Privacy Policy?</strong>A privacy policy is a legal document
+                                        that outlines how a website collects, uses, stores, and shares personal
+                                        information from its users.</small></p>
+
+                                <p class="mb-0"><small><strong>Privacy Policy</strong>At Steves place, we are committed
+                                        to protecting your privacy. This Privacy Policy explains how we collect, use,
+                                        and safeguard your personal information when you visit our website.</small></p>
+
+
+                                <p class="mb-0"><small><strong>Information We Collect</strong>We collect information you
+                                        provide directly to us, such as your name, email address, and any other
+                                        information you choose to share.</small></p>
+
+
+                                <p class="mb-0"><small><strong>How We Use Your Information</strong>Your information is
+                                        used to provide and improve our services.</small></p>
+
+
+                                <p class="mb-0"><small><strong>Data Security</strong>We implement reasonable security
+                                        measures to protect your information from unauthorized access.</small></p>
+
+                                <a href="https://www.digital.govt.nz/standards-and-guidance/" class="link-bottom"
+                                    alt="privacy policy"><small>REF: standards-and-guidance</small></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <div class="research-flip-box">
+                        <div class="research-flip-box-inner">
+                            <div
+                                class="research-flip-box-front research-box d-flex flex-column p-3 justify-content-center align-items-center border border-2 border-warning">
+                                <h6 class="text-center w-100 pb-3">HOW TO IMPROVE YOUR WEBSITE SEO?</h6>
+                                <img src="images/research/seo.jpg" alt="seo" class="img-fluid border">
+                            </div>
+                            <div
+                                class="research-flip-box-back research-box my-3 p-3 align-items-start border border-2 border-warning smaller-text">
+                                <a><strong><small>5 Ways to Improve Your Website's Visibility on Search
+                                            Engines</small></strong></a>
+                                <ol>
+                                    <li><small>Crawl accessibility so engines can read your website</small> </li>
+                                    <li><small>Keyword optimized to attract searchers & engines</small> </li>
+                                    <li><small>Great user experience including a fast load speed and compelling
+                                            UX</small> </li>
+                                    <li><small>Share-worthy content that earns links, citations, and
+                                            amplification</small> </li>
+                                    <li><small>Compelling content that answers the searcher’s query</small></li>
+                                </ol>
+                                <a href="https://moz.com/beginners-guide-to-seo" alt="beginners-guide-to-seo"
+                                    class="link-bottom">REF: Beginers guide to seo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <div class="research-flip-box">
+                        <div class="research-flip-box-inner">
+                            <div
+                                class="research-flip-box-front research-box  d-flex flex-column p-3 justify-content-center align-items-center border border-2 border-warning">
+                                <h6 class="text-center w-100 pb-3">Factors you should know when choosing a right web
+                                    hosting provider</h6>
+                                <img src="images/research/web-hosting.jpg" alt="web-hosting" class="img-fluid border ">
+                            </div>
+                            <div
+                                class="research-flip-box-back research-box my-3 p-3 align-items-start border border-2 border-warning smaller-text">
+                                <p class="mb-0"><a><strong><small>Web Publishing</small></strong></a> <small>When
+                                        choosing a web hosting provider, consider the following major factors:</small>
+                                </p>
+                                <ol class="mb-0">
+                                    <li><strong><small>Reliability and Uptime</strong> Ensure the hosting provider
+                                        offers high reliability and uptime guarantees, typically 99.9% or better, to
+                                        keep your website accessible.</small></li>
+                                    <li><strong><small>Performance and Speed</strong> Choose a provider with good
+                                        performance and fast server response times to ensure quick load times for your
+                                        website visitors.</small></li>
+                                    <li><strong><small>Customer Support</strong> Opt for a hosting provider with
+                                        excellent customer support that offers 24/7 assistance to address any issues or
+                                        queries promptly.</small></li>
+                                </ol>
+                                <a href="https://www.knownhost.com/blog/web-hosting-explained-for-beginners/"
+                                    alt="web hosting" class="link-bottom">REF: Hosting explained for beginers</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <div class="research-flip-box">
+                        <div class="research-flip-box-inner">
+                            <div
+                                class="research-flip-box-front research-box  d-flex flex-column p-3 justify-content-center align-items-center border border-2 border-warning">
+                                <h6 class="text-center w-100 pb-3">WEB PERFORMANCE AND MAINTENANCE</h6>
+                                <img src="images/research/web-performance.jpg" alt="web-performance"
+                                    class="img-fluid border ">
+                            </div>
+                            <div
+                                class="research-flip-box-back research-box my-3 p-3  align-items-start border border-2 border-warning smaller-text">
+                                <p class="mb-0"><strong><small>Web Performance & Maintenance</small></strong></p>
+
+                                <p class="mb-0"><strong><small>Ways to Reduce Page Loading Time</small></strong>
+                                </p>
+                                <ol class="mb-0">
+                                    <li><small>Optimize Images: Compress to save size</small></li>
+                                    <li><small>Minimize HTTP Requests: Reduce the number of elements</small></li>
+                                    <li><small>Use Browser Caching: Store frequently accessed resources</small> </li>
+                                    <li><small>Minify CSS and JavaScript: Combine files into one</small></li>
+                                    <li><small>Enable Compression: Use Gzip to compress text-based resources</small>
+                                    </li>
+                                </ol>
+
+                                <p class="mb-0"><a><strong><small>Important Maintenance Tasks</small></strong></a></p>
+                                <ol class="mb-0">
+                                    <li><small>Regular Backups: To protect against data loss</small></li>
+                                    <li><small>Update Software: Top patch vulnerabilities </small></li>
+                                    <li><small>Check for Broken Links: For a smooth user experiance</small></li>
+                                    <li><small>Monitor Performance: to address issues quickly </small></li>
+                                    <li><small>Review Security Settings: To make keep them updated</small></li>
+                                </ol>
+                                <a href="https://www.shopify.com/nz/enterprise/blog/web-performance-optimization"
+                                    alt="performance tips" class="link-bottom">REF: Performance Tips</a>
+                                <a href="https://www.hostgator.com/blog/guide-website-maintenance/"
+                                    alt="Maintenance tips" class="link-bottom">REF: Maintenance Tips</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 mb-4">
+                    <div class="research-flip-box">
+                        <div class="research-flip-box-inner">
+                            <div
+                                class="research-flip-box-front research-box  d-flex flex-column p-3 justify-content-center align-items-center border border-2 border-warning">
+                                <h6 class="text-center w-100 pb-3">WEB SECURITY</h6>
+                                <img src="images/research/web-security.jpg" alt="web-security"
+                                    class="img-fluid border ">
+                            </div>
+                            <div
+                                class="research-flip-box-back research-box my-3 p-3 align-items-start border border-2 border-warning smaller-text">
+                                <p class="mb-0"><strong><small>Web Security</strong></p>
+
+                                <p class="mb-0"><strong><small>Common Cyber Attacks and Preventive
+                                            Measures</small></strong></p>
+                                <ol class="mb-0">
+                                    <li><small>Phishing Attacks: Scrutinize the emails you receive, update
+                                            passwords</small></li>
+                                    <li><small>SQL Injection: Use an Intrusion detection system, Carry out a validation
+                                            of the user-supplied data.</small></li>
+                                    <li><small>Cross-Site Scripting (XSS): Mitigate XSS by sanitizing user inputs and
+                                            using Content Security Policy (CSP) headers.</small></li>
+                                    <li><small>DDoS Attacks: Implement rate limiting, use a Content Delivery Network
+                                            (CDN), and have DDoS protection services in place.</small></li>
+                                    <li><small>Malware Attack: Use antivirus software, Use firewalls, avoid clicking on
+                                            suspicious links .</small></li>
+                                </ol>
+
+                                <a href="https://www.simplilearn.com/tutorials/cyber-security-tutorial/types-of-cyber-attacks"
+                                    alt="web security" class="link-bottom">REF: Web Security</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--footer-->
+        <div id="footer" class="container-fluid p-3">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/linkedin.png" alt="LinkedIn"
+                            class="social-icon" /></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/youtube.png" alt="YouTube"
+                            class="social-icon" /></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="images/twitter.png" alt="Twitter"
+                            class="social-icon" /></a>
+                    <a href="https://www.facebook.com/slizzed/"><img src="images/facebook.png" alt="Facebook"
+                            class="social-icon" /></a>
+                    <a href="https://www.instagram.com/o0slizzed0o/?hl=en"><img src="images/instagram.png"
+                            alt="Instagram" class="social-icon" /></a>
+                </div>
+                <div class="col-8 col-md-4 text-end text-md-center">
+                    <p class="mb-0">&copy; 2024 Steven Rogers</p>
+                </div>
+                <div class="col-4 col-md-4 text-end">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

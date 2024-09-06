@@ -1,0 +1,403 @@
+/*Nav bar */
+.navbar {
+    background: rgb(138, 201, 109);
+    background: linear-gradient(180deg, rgb(195, 216, 185) 0%, rgb(184, 243, 108) 100%)
+}
+.hover-bg-secondary:hover {
+    background-color: yellow;
+}
+
+/*showcase section*/
+#showcasebox {
+    background-color: rgba(0, 0, 0, 0.295);
+    backdrop-filter: blur(5px);
+}
+#showcase-section {
+    background-image: url('../images/javascriptshowcase.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Bio section*/
+#bio-webtech h1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#bio {
+    background-color: #e3c701;
+}
+#webtech {
+    background: rgb(250,204,206);
+    background: linear-gradient(180deg, rgba(250,204,206,1) 0%, rgba(224,111,103,1) 100%)
+}
+
+/*Competancies custom text styles - fonts*/
+#competencies h1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#competencies h2 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000080;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+#competencies {
+    background-color: #b2ff7e;
+}
+.competence-box img {
+    width: 150px; 
+    height: 150px;
+}
+
+
+/*Flip box */
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 300px; 
+    perspective: 1000px;
+    margin-bottom: 30px; 
+}
+.flip-box-inner {
+    position: relative;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flip-box-front {
+    background-color: #93e5f0;
+    color: black;
+}
+.flip-box-back {
+    background-color: #fadfa5;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/*Authenticity section*/
+#authenticity {
+    background-color: #fa6900;
+}
+#authenticity h1 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+/*footer*/
+#footer {
+    background: rgb(138, 201, 109);
+    background: linear-gradient(180deg, rgb(195, 216, 185) 0%, rgb(184, 243, 108) 100%)
+}
+.social-icon {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  /*button colour*/
+  .btn-custom {
+    background-color: white;
+    color: black;
+    border: 1px solid #777777;
+}
+
+.btn-custom.active,
+.btn-custom:focus,
+.btn-custom[aria-expanded="true"] {
+    background-color: #ffc107;
+    color: black;
+    border-color: #ffc107;
+}
+
+  /* fixing google form to make it scale to small sreen */
+  .responsive-iframe-container {
+    position: relative;
+    padding-bottom: 150%;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* custom bg colour for XML content*/
+.xmlbg {
+    background-color: #d1cfcf; /* Light grey */
+  }
+
+  /*XML code snippets*/
+  pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+  /*Slideshow stuff*/
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.mySlides img {
+    width: 50%; 
+    display: inline-block; 
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.description {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.numbertext {
+    color: #0c0b0b;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*rss feed*/
+.rss-item {
+    background-color: rgba(211, 211, 211, 0.753);
+}
+
+
+/* Style for manual slideshow */
+.manual-slideshow-container {
+    text-align: center;
+    position: relative;
+}
+
+.mySlides-manual {
+    display: none;
+}
+
+/* Navigation buttons styling */
+button.btn-primary {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.btn-primary:focus {
+    outline: none;
+}
+
+/* Dot styles */
+.dot-manual {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-manual {
+    background-color: #717171;
+}
+
+
+/*sign in form*/
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0cccc;
+}
+
+/*custom slideshow backgrounds*/
+
+.ssbg-custom1 {
+    background-color: #fcfdae;
+}
+.ssbg-custom2 {
+    background-color: #b8fcb1;
+}
+
+/*secret bonus*/
+#matrix-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+/*vote buttons*/
+.card-vote-button {
+    cursor: pointer; 
+    user-select: none; 
+    padding: 8px; 
+}
+.card-vote-button {
+    color: #555555;
+}
+
+.card-vote-selected > .card-vote-button,
+.card-vote-selected > .card-vote-count {
+    color: #e3c701;
+}
+
+.card-vote:not(.card-vote-selected) > .card-vote-button:hover {
+    color: black
+} 
+
+/*Research page*/
+
+.research-box img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.research-flip-box {
+    background-color: transparent;
+    width: 98%;
+    height: 350px; 
+    perspective: 1000px;
+    margin-bottom: 30px; 
+}
+
+
+.research-flip-box-inner {
+    position: relative;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.research-flip-box:hover .research-flip-box-inner {
+    transform: rotateY(180deg);
+}
+.research-flip-box-front, .research-flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.research-flip-box-front {
+    background-color: #fadec8;
+    color: black;
+}
+.research-flip-box-back {
+    background-color: #fadfa5;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.rsboxf {
+    background-color: #f5e39296;
+    color: black;
+}
+
+.research-flip-box-back img {
+    max-width: 60px;
+    max-height: 20px;
+
+}
+/*text size so it fits into the flipbox*/
+.smaller-text {
+    font-size: 0.9rem; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.research-flip-box-back p {
+    margin-bottom: 0; 
+}
+
+.research-flip-box-back small {
+    display: inline; 
+}
+
+ol {
+    margin: 0; 
+    padding-left: 0; 
+    list-style-position: inside; 
+}
+
+ol li {
+    margin-bottom: 0; 
+}
