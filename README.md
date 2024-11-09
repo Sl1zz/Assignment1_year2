@@ -1,5 +1,5 @@
 
-#Assignment 1 for advanced web-design#
+#Assignment 1 for advanced web-design
 
 
 # **Hey I'm Steve**
